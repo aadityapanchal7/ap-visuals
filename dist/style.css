@@ -848,6 +848,10 @@ video {
   background-color: rgb(12 15 44 / var(--tw-bg-opacity));
 }
 
+.bg-inherit{
+  background-color: inherit;
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1080,6 +1084,10 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .noshow {
   opacity: 0;
   filter: blur(5px);
@@ -1124,9 +1132,23 @@ video {
   background-color: rgb(50 42 101 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-Button1:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 143 219 / var(--tw-bg-opacity));
+}
+
+.hover\:to-Button1:hover{
+  --tw-gradient-to: #8F8FDB var(--tw-gradient-to-position);
+}
+
 .hover\:text-blue-500:hover{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.hover\:text-Button1:hover{
+  --tw-text-opacity: 1;
+  color: rgb(143 143 219 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-lg:hover{
