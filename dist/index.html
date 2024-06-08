@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,154 +10,217 @@
 </head>
 
 <body class="bg-regal-blue">
-<!-- Navbar -->
-<header class="px-4 text-white shadow font-Outfit">
-  <div class="relative flex flex-col max-w-screen-lg py-4 mx-auto sm:items-center sm:justify-between sm:flex-row">
-    <a class="flex items-center text-2xl" href="#">
-      <span>AP.VISUALS</span>
-    </a>
-    <input type="checkbox" class="hidden peer" id="navbar-open">
-    <span class="sr-only">Toggle Navigation</span>
-    <label for="navbar-open" class="absolute right-0 mt-1 text-xl cursor-pointer sm:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="0.88em" height="1em" viewBox="0 0 50 50" style="fill:#FFFFFF;"> <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path> </svg>
-    </label>
-    <!--Navbar -->
-    <nav class="hidden peer-checked:block sm:mt-0 sm:block" aria-label="Header Navigation">
-      <ul class="flex flex-col items-center gap-y-4 sm:flex-row sm:gap-x-8">
-        <li><a class=" hover:text-blue-500" href="#">Home</a></li>
-        <li><a class=" hover:text-blue-500" href="#">About</a></li>
-        <li><a class=" hover:text-blue-500" href="#">Services</a></li>
-        <li class="relative">
-          <div class="w-auto cursor-pointer transition-all bg-blue-500 text-white px-6 py-1 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
-            <a href="#">Contact</a>
+  <!-- Navbar -->
+  <header class="px-4 text-white shadow font-Outfit">
+    <div class="relative flex flex-col max-w-screen-lg py-4 mx-auto sm:items-center sm:justify-between sm:flex-row">
+      <a class="flex items-center text-2xl" href="#">
+        <span>AP.VISUALS</span>
+      </a>
+      <input type="checkbox" class="hidden peer" id="navbar-open">
+      <span class="sr-only">Toggle Navigation</span>
+      <label for="navbar-open" class="absolute right-0 mt-1 text-xl cursor-pointer sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="0.88em" height="1em" viewBox="0 0 50 50"
+          style="fill:#FFFFFF;">
+          <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+          </path>
+        </svg>
+      </label>
+      <!--Navbar -->
+      <nav class="hidden peer-checked:block sm:mt-0 sm:block" aria-label="Header Navigation">
+        <ul class="flex flex-col items-center gap-y-4 sm:flex-row sm:gap-x-8">
+          <li><a class=" hover:text-blue-500" href="#">Home</a></li>
+          <li><a class=" hover:text-blue-500" href="#">About</a></li>
+          <li><a class=" hover:text-blue-500" href="#">Services</a></li>
+          <li class="relative">
+            <div
+              class="w-auto cursor-pointer transition-all bg-Button3 text-white px-6 py-1 rounded-lg border-Button2 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+              <a href="#">Contact</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Hero Section-->
+  <section class="text-white ">
+    <div class="flex flex-col mt-8 md:flex-row">
+      <!-- Image Mobile-->
+      <div>
+        <img src="Graphic.png" class="box-border flex w-screen mb-10 md:hidden" width="400">
+      </div>
+      <!--Main-->
+      <div class="box-border flex flex-col justify-around px-10 text-center md:ml-10 md:px-20 md:w-1/2 md:text-left">
+        <!--Header-->
+        <div class="text-5xl font-Outfit md:text-6xl">
+          Crafting Digital Experiences that Inspire
+        </div>
+        <!--Subtext-->
+        <div class="mt-10 leading-relaxed md:mt-0 font-Roboto">
+          At AP Visuals, we transform ideas into stunning
+          websites that captivate audiences and drive results.
+        </div>
+        <!--Buttons-->
+        <div class="flex-row mt-6 space-x-2 space-y-4 md:mt-0 md:space-x-4">
+          <!--Button 1-->
+          <button
+            class="left-0 inline-flex px-8 py-2 text-sm text-white transition ease-in-out delay-75 bg-Button1 font-Outfit rounded-2xl hover:bg-Button2 hover:-translate-y-1 hover:scale-110">
+            Explore Our Work
+          </button>
+          <!--Button 2-->
+          <button
+            class="inline-flex items-center px-12 py-2 text-sm text-white transition ease-in-out delay-75 border border-Button3 font-Outfit rounded-2xl hover:-translate-y-1 hover:scale-110">
+            Get Started
+          </button>
+        </div>
+      </div>
+      <!-- Image Desktop-->
+      <div class="md:w-1/2">
+        <img src="Graphic.png" class="hidden md:block">
+      </div>
+    </div>
+  </section>
+
+  <!--About Us-->
+  <section class="flex flex-col mt-40 md:mt-20 md:flex-row">
+    <!--Image-->
+    <div class="box-border w-screen px-20 md:w-1/2">
+      <img src="Illustration.png" width="350">
+    </div>
+    <!--Text-->
+    <div class="box-border flex flex-col items-center justify-center px-10 mt-5 text-center text-white font-Outfit md:px-20 md:text-left md:w-1/2 md:items-start">
+      <div class="text-6xl text-balance">
+        A Bit More About Us 
+      </div>
+      <!--Subtext-->
+      <div class="justify-around mt-5 text-sm leading-relaxed font-Roboto">
+        At AP Visuals, we believe that every project is an
+        opportunity to learn and grow. That's why we offer
+        a range of services to help businesses and individuals
+        achieve their goals. From website design and development
+        to social media management and content creation, we have
+        the expertise to help businesses and individuals create
+        a brand that resonates with their target audience.
+      </div>
+      <!--Button-->
+      <button
+        class="inline-flex w-40 px-12 py-2 mt-5 text-sm transition ease-in-out delay-75 border md:items-start border-Button3 rounded-2xl hover:-translate-y-1 hover:scale-110">
+        Learn More
+      </button>
+    </div>
+  </section>
+
+  <!--Services-->
+  <section>
+    <div class="flex items-center justify-center pt-10 mt-20 text-5xl text-white md:pt-0 font-Outfit">
+      Our Services
+    </div>
+    <!--Services-->
+    <div class="flex flex-col items-center justify-center mt-20 space-y-20 md:space-y-0 md:space-x-10 md:flex-row">
+      <!--Card 1 - Web Development-->
+      <div class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110">
+        <div class="relative flex flex-col text-white shadow-md bg-Button2 w-80 rounded-xl bg-clip-border">
+          <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button2 to-Button1">
           </div>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="text-white md:min-h-screen">
-  <div class="flex flex-col items-center justify-between pt-40 pl-10 mb-40 text-6xl md:pt-0 md:pl-0 md:mt-0 md:ml-20 font-Outfit md:flex-row">
-    <!-- Text + Button-->
-    <div class="flex-col md:pl-9 md:mr-50 ">
-      Crafting Digital Experiences that Inspire
-      <pre class="flex mt-5 text-sm text-left font-Roboto">
-At AP Visuals, we transform ideas into stunning 
-websites that captivate audiences and drive results.
-      </pre>
-      <!-- B-->
-      <div class="pl-3 md:pl-0">
-        <button class="inline-flex items-center px-4 py-2 text-sm text-white transition ease-in-out delay-75 bg-Button1 font-Outfit rounded-2xl hover:bg-Button2 hover:-translate-y-1 hover:scale-110">
-          Explore Our Work
-        </button>
-        <button class="inline-flex items-center py-2 text-sm text-white transition ease-in-out delay-75 border px-9 border-Button3 font-Outfit rounded-2xl hover:-translate-y-1 hover:scale-110">
-          Get Started
-        </button>
-      </div>
-    </div>
-    <!-- Graphic -->
-    <img src="Graphic.png" width="500" class="right-0 hidden h-auto pl-5 mt-20 mb-20 mr-20 transition ease-in-out md:block delay-50 hover:-translate-y-1 hover:scale-110 md:pl-0">
-  </div>
-</section>
-
-
-<!-- Section 2 -->
-<section class="min-h-screen text-white">
-  <div class="flex flex-col justify-center text-center md:justify-between md:text-left md:flex-row md:pr-40">
-    <img src="Illustration.png" width="350" class="left-0 ml-5 transition ease-in-out md:ml-20 delay-50 hover:-translate-y-1 hover:scale-110">
-    <div class="flex-col">
-      <div class="text-6xl md:mt-10 md:ml-20">
-        <pre class="font-Outfit">
-  A Bit More 
-  About Us  
-        </pre>
-      </div>
-      <div class="text-sm ">
-        <pre class="font-Roboto md:ml-20 ">
-      Lorem ipsum, dolor sit amet consectetur
-      adipisicing elit. Enim aut, ipsam minus
-      vel error atque tempore optio suscipit
-      inventore maxime quam voluptatem nisi
-      modi placeat quia fugiat. Excepturi,
-      repellendus cum.
-      </pre>
-      </div>
-      <div class="md:pl-6">
-        <button class="inline-flex px-4 py-2 text-sm text-white transition ease-in-out delay-75 md:ml-20 bg-Button1 font-Outfit rounded-2xl hover:bg-Button2 hover:-translate-y-1 hover:scale-110">
-          Learn More
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- Header -->
-  <div class="top-0 flex items-center justify-center mt-20 text-5xl text-white font-Outfit">
-    Our Services
-  </div>
-  
-<!-- Services -->
-<section class="flex flex-col justify-between min-h-screen pl-10 mt-20 md:pl-20 md:pr-20 md:flex-row">
-  <!-- Card 1 -->
-  <div class="relative flex flex-col mx-2 text-white transition ease-in-out delay-75 shadow-md bg-Button2 w-80 rounded-xl bg-clip-border h-80 hover:-translate-y-1 hover:scale-110">
-      <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button1 to-Button2">
-      </div>
-      <div class="p-6">
-          <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal font-Outfit text-blue-gray-900">
-              Website Development
-          </h5>
-          <p class="block text-base antialiased font-light leading-relaxed font-Roboto text-inherit">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-          </p>
-      </div>
-      <div class="p-6 pt-0">
-          <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-              Book Now
-          </button>
-      </div>
-  </div>
-
-  <!-- Card 2 -->
-<div class="py-14 md:py-0">
-    <div class="relative flex flex-col mx-2 text-white transition ease-in-out delay-75 shadow-md bg-Button2 w-80 rounded-xl bg-clip-border h-80 hover:-translate-y-1 hover:scale-110">
-        <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button1 to-Button2">
-        </div>
-        <div class="p-6">
-            <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal font-Outfit text-blue-gray-900">
-                Graphic Design
+          <div class="p-6">
+            <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Web Development
             </h5>
-            <p class="block text-base antialiased font-light leading-relaxed font-Roboto text-inherit">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula. 
             </p>
-        </div>
-        <div class="p-6 pt-0">
+          </div>
+          <div class="p-6 pt-0">
             <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                Book Now
+              Read More
             </button>
+          </div>
         </div>
-    </div>
-</div>
-
-  <!-- Card 3 -->
-  <div class="relative flex flex-col mx-2 text-white transition ease-in-out delay-75 shadow-md h-80 bg-Button2 w-80 rounded-xl bg-clip-border hover:-translate-y-1 hover:scale-110">
-      <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button1 to-Button2">
       </div>
-      <div class="p-6">
-          <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal font-Outfit text-blue-gray-900">
+      <!--Card 2 - Graphic Design-->
+      <div class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110">
+        <div class="relative flex flex-col text-white shadow-md bg-Button2 w-80 rounded-xl bg-clip-border">
+          <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button2 to-Button1">
+          </div>
+          <div class="p-6">
+            <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+              Graphic Design
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula. 
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Card 3 - Digital Marketing-->
+      <div class="transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-110">
+        <div class="relative flex flex-col text-white shadow-md bg-Button2 w-80 rounded-xl bg-clip-border">
+          <div class="relative h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button2 to-Button1">
+          </div>
+          <div class="p-6">
+            <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
               Digital Marketing
-          </h5>
-          <p class="block text-base antialiased font-light leading-relaxed font-Roboto text-inherit">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-          </p>
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula. 
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+              Read More
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="p-6 pt-0">
-          <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-              Book Now
+    </div>
+  </section>
+
+  <!--Portfolio-->
+  <section class="min-h-screen pt-10 mt-40 md:mt-20">
+    <!--Mobile Image-->
+    <div class="box-border flex justify-center w-screen px-0 md:pl-20 md:w-1/2 md:hidden">
+      <img src="Other 12.png" width="300">
+    </div>
+    <!--Main-->
+    <div class="flex flex-col text-white md:px-20 md:flex-row">
+      <div class="flex flex-col justify-center mt-10 text-center md:justify-normal md:pl-10 md:w-1/2 md:box-border md:start-0">
+        <!--Header-->
+        <div class="px-10 text-6xl font-Outfit text-balance">
+          Take A Look At Our Work!
+        </div>
+        <!--Subtext-->
+        <div class="px-20 mt-5 text-sm leading-relaxed font-Roboto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <!--Button-->
+
+<div class="">
+          <button
+          class="inline-flex w-40 px-12 py-2 mt-5 transition ease-in-out delay-75 border text-centertext-sm md:items-start border-Button3 rounded-2xl hover:-translate-y-1 hover:scale-110">
+          Projects
           </button>
+</div>
       </div>
-  </div>
-</section>
-</body>
-</html>
+      <!--Image-->
+      <div class="box-border justify-center hidden w-screen px-0 md:pl-20 md:w-1/2 md:block">
+        <img src="Other 12.png" width="300">
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Footer -->
+  <footer class="py-8 text-white font-Roboto">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 AP Visuals. All rights reserved.</p>
+      <ul class="flex justify-center mt-4 space-x-4">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
