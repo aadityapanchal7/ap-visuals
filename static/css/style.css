@@ -700,6 +700,10 @@ video {
   height: 10rem;
 }
 
+.min-h-screen{
+  min-height: 100vh;
+}
+
 .w-40{
   width: 10rem;
 }
@@ -1078,7 +1082,7 @@ html{
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .show {
