@@ -10,5 +10,9 @@ def index():
 def contact():
   return render_template('Contact.html')
 
+@app.route('/Projects')
+def project():
+  return render_template('Projects.html')
+
 if __name__ == '__main__':
   app.run(debug=True)
