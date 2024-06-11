@@ -660,6 +660,10 @@ video {
   margin-right: 2%;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -690,10 +694,6 @@ video {
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .box-border{
@@ -1448,10 +1448,6 @@ html{
     margin-top: 5rem;
   }
 
-  .md\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .md\:box-border{
     box-sizing: border-box;
   }
@@ -1482,10 +1478,6 @@ html{
 
   .md\:w-\[48\%\]{
     width: 48%;
-  }
-
-  .md\:w-full{
-    width: 100%;
   }
 
   .md\:max-w-3xl{
