@@ -1,19 +1,32 @@
 {% extends 'Nav.html' %}
 
 {% block content %}
+<div class="flex flex-col items-center justify-center px-8 text-center md:px-20">
+  <div class="text-5xl text-white font-Outfit">
+    About
+  </div> 
+
+  <div class="container mt-10 text-xl leading-relaxed text-white font-Outfit md:text-center text-pretty-white">
+    Hey, I'm Aaditya Panchal, and I am thrilled to introduce AP-Visuals, a freelancing company I developed and created during my freshman year of high school. My passion for technology and design drove me to start this venture with a mission to help and support local and small businesses by providing them with a robust online presence.
+
+    In this digital day and age, the internet is a huge part of our lives and almost a necessity for any business looking to succeed. Having an online presence is no longer optional; it's essential. It allows businesses to reach a broader audience, engage with customers, and showcase their products and services in the best light possible. This is especially important for small and local businesses that may not have the same resources as larger companies to invest in their digital footprint.
+    
+    At AP-Visuals, we understand the unique challenges that small businesses face. Many local businesses operate on tight budgets and may lack the technical expertise needed to create and maintain an effective online presence. That's where we come in. Our goal is to bridge this gap by offering affordable, high-quality digital solutions that are tailored to the specific needs of each business.
+  </div>
+
+<div class="flex items-center mt-10 mb-10 justify-items-start">
+  <button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+    Back
+  </button>
+</div>
+
+</div>
+
 <script>
   function goToIndexAndScroll() {
       // Redirect to index.html
       window.location.href = "{{ url_for('index') }}#About";
   }
 </script>
-
-<div class="text-5xl text-white">
-  About
-</div> 
-
-  <button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-    Back
-  </button>
   
 {% endblock %}

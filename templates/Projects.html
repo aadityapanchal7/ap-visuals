@@ -1,18 +1,45 @@
 {% extends 'Nav.html' %}
 
 {% block content %}
+
+<div class="flex items-center justify-center text-5xl text-white ">
+  Projects
+</div> 
+<!--Card 1 -->
+<div class="px-10 mt-20 md:px-20">
+    <div class="relative flex flex-col w-full text-white shadow-md bg-Button2 rounded-xl bg-clip-border">
+      <div class="relative flex items-center justify-center h-40 mx-4 -mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40 bg-gradient-to-r from-Button2 to-Button1">
+        <img src="/static/img/RMA-Logo.webp" class="w-fit h-fit">
+      </div>
+      <div class="p-6">
+        <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+          Research Made Accessible       
+        </h5>
+        <p class="flex flex-wrap font-sans text-base antialiased font-light leading-relaxed text-inherit">
+          Research Made Accessible aims to democratize academic knowledge by developing an intuitive online platform that simplifies complex research for a broader audience. Our platform will feature user-friendly navigation, simplified research summaries, advanced search and filter options, and interactive elements like infographics and videos to enhance understanding. Additionally, personalized recommendations and community engagement forums will foster a collaborative environment. By breaking down barriers to comprehension, Research Made Accessible will empower students, professionals, and curious individuals to easily access and understand high-quality research.            </p>
+      </div>
+      <div class="p-6 pt-0">
+        <a href="https://researchmadeaccessible.org" target="__blank">
+          <button data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+            Website
+          </button>
+        </a>
+      </div>
+    </div
+</div>
+
+
+    
+
+<button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="mt-10 select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+  Back
+</button>
+
 <script>
   function goToIndexAndScroll() {
       // Redirect to index.html
       window.location.href = "{{ url_for('index') }}#Portfolio";
   }
-</script>
+</script>}
 
-<div class="text-5xl text-white">
-  Project
-</div> 
-
-<button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-  Back
-</button>
 {% endblock %}

@@ -696,6 +696,14 @@ video {
   margin-top: 2rem;
 }
 
+.ml-20{
+  margin-left: 5rem;
+}
+
+.ml-10{
+  margin-left: 2.5rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -804,6 +812,10 @@ video {
   justify-content: space-around;
 }
 
+.justify-items-start{
+  justify-items: start;
+}
+
 .gap-y-4{
   row-gap: 1rem;
 }
@@ -832,6 +844,10 @@ video {
 
 .text-balance{
   text-wrap: balance;
+}
+
+.text-pretty{
+  text-wrap: pretty;
 }
 
 .rounded-2xl{
@@ -998,12 +1014,25 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-40{
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
 .pt-0{
   padding-top: 0px;
 }
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pl-40{
+  padding-left: 10rem;
 }
 
 .text-center{
@@ -1545,6 +1574,10 @@ html{
 
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-center{
+    text-align: center;
   }
 
   .md\:text-6xl{

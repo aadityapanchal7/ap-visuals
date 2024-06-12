@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP Visuals</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="icon" href="/static/img/Logo.png" type="image/png">
+</head>
+
+<body class="bg-regal-blue">
+  <!-- Navbar -->
+  <header class="px-4 text-white shadow font-Outfit " id="Home">
+    <div class="relative flex flex-col max-w-screen-lg py-4 mx-auto sm:items-center sm:justify-between sm:flex-row">
+      <a class="flex items-center text-2xl" href="#">
+        <span>AP.VISUALS</span>
+      </a>
+      <input type="checkbox" class="hidden peer" id="navbar-open">
+      <span class="sr-only">Toggle Navigation</span>
+      <label for="navbar-open" class="absolute right-0 mt-1 text-xl cursor-pointer sm:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="0.88em" height="1em" viewBox="0 0 50 50"
+          style="fill:#FFFFFF;">
+          <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z">
+          </path>
+        </svg>
+      </label>
+      <!--Navbar -->
+      <nav class="hidden peer-checked:block sm:mt-0 sm:block" aria-label="Header Navigation">
+        <ul class="flex flex-col items-center gap-y-4 sm:flex-row sm:gap-x-8">
+          <li><a class="hover:text-Button1" href="/">Home</a></li>
+          <li><a class="hover:text-Button1" href="#About">About</a></li>
+          <li><a class="hover:text-Button1" href="#Services">Services</a></li>
+          <li class="relative">
+            <div
+              class="w-auto cursor-pointer transition-all bg-Button3 text-white px-6 py-1 rounded-lg border-Button2 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+              <a href="#Contact">Contact</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+</body>
+</html>

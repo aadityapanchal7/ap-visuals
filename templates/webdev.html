@@ -1,18 +1,50 @@
 {% extends 'Nav.html' %}
 
 {% block content %}
-<script>
-  function goToIndexAndScroll() {
-      // Redirect to index.html
-      window.location.href = "{{ url_for('index') }}#Services";
-  }
-</script>
+<section class="text-white noshow animation-right" >
+  <div class="flex flex-col mt-8 md:flex-row">
+    <!-- Image Mobile-->
+    <div>
+      <img src="/static/img/Hero_Page.png" class="box-border flex w-screen mb-10 md:hidden" width="400">
+    </div>
+    <!--Main-->
+    <div class="box-border flex flex-col justify-around px-10 text-center md:ml-10 md:px-20 md:w-1/2 md:text-left">
+      <!--Header-->
+      <div class="text-5xl font-Outfit md:text-6xl">
+        Web Development
+      </div>
+      <!--Subtext-->
+      <div class="mt-10 leading-relaxed md:mt-0 font-Roboto">
+        
+At AP-Visuals, we create custom websites that elevate
+your business online. Our team combines stunning design with
+seamless functionality to deliver user-friendly, responsive
+sites that look great on all devices. Whether you need an 
+e-commerce platform, a business site, or a personal blog, we
+can ensure your site is optimized for performance and search
+engines. 
+      </div>
+      <!--Buttons-->
+      <div class="flex flex-col mt-6 space-y-4 md:space-y-0 md:flex-row md:mt-0 md:space-x-4">
+        <!--Button 1-->
+        <button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+          Back
+        </button>
+        <!--Button 2-->
+      </div>
+    </div>
+    <!-- Image Desktop-->
+    <div class="md:w-1/2">
+      <img src="/static/img/Hero_Page.png" class="hidden md:block">
+    </div>
+  </div>
+</section>
 
-<div class="text-5xl text-white">
-  Webdev
-</div> 
-
-<button onclick="goToIndexAndScroll()" data-ripple-light="true" type="button" class="select-none rounded-lg bg-Button3 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-  Back
-</button>
+  <script>
+    function goToIndexAndScroll() {
+        // Redirect to index.html
+        window.location.href = "{{ url_for('index') }}#Services";
+    }
+  </script>
+    
 {% endblock %}
