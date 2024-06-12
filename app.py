@@ -16,7 +16,7 @@ def project():
 
 @app.route('/Webdev')
 def webdev():
-  return render_template('Webdev.html')
+  return render_template('webdev.html')
 
 @app.route('/Design')
 def design():
